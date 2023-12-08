@@ -23,4 +23,6 @@ hide:
 
 网站文章...？可以随意使用，只要不违反法律与公序良俗，不用于攻击他人等行为。除文章另有告示外，遵循 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) 协议。
 
+如需帮助，请随时 [联系](http://chenluan.mikecrm.com/GswlLiQ) 我。
+
 © 晨峦 2023
