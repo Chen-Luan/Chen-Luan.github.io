@@ -7,14 +7,13 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-  # - navigation.instant
-  # - navigation.instant.progress
   - navigation.tabs
   - navigation.prune
   - navigation.indexes
   - toc.follow
   - navigation.top
   - search.suggest
+  - content.code.copy
   palette: 
   - media: "(prefers-color-scheme: light)"
     scheme: default
