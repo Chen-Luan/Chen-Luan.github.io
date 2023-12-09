@@ -55,7 +55,8 @@ nav:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
 
 plugins:
-- search
+- search:
+    separator: '[\s\u200b\-]'
 - i18n:
     docs_structure: suffix
     fallback_to_default: true
