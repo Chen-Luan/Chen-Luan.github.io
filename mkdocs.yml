@@ -34,11 +34,18 @@ extra:
   #   link: /zh/
   #   lang: zh
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 nav:
 - home: index.md
 - notes: 
   - 2023:
     - dec: notes/dec.md
+- essay:
+  - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
 
 plugins:
 - search
@@ -57,3 +64,5 @@ plugins:
         home: 主页
         notes: 便签墙
         dec: 十二月
+        essay: 札记随笔
+        music-theory-foundation-for-charting: 制谱乐理基础入门
