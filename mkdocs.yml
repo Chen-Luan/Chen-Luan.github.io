@@ -30,6 +30,9 @@ theme:
       icon: material/brightness-4
       name: 切换到浅色模式
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   generator: false
   # alternate:
@@ -50,7 +53,7 @@ nav:
 - home: index.md
 - notes: 
   - 2023:
-    - dec: notes/dec.md
+    - dec: notes/2023/dec.md
 - essay:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
 

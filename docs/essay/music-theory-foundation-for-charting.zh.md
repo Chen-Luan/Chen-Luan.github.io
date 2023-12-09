@@ -34,11 +34,11 @@ BPM = 拍子所占时长（s）* 60
 
 ## Offset
 
-??? warning "仅限制谱乐理"
+??? coffee "仅限制谱乐理"
 
     此部分内容仅适用于制谱乐理，在传统乐理内无此概念。
 
-    换言之，谱师听得懂这部分内容，但是音乐人可能不是很懂这个概念的意思。
+    换言之，谱师听得懂这部分内容，但是你的音乐人朋友可能不是很懂这个概念的意思。
 
 Offset 一般指偏移，可以是指谱面整体相对于音乐的偏移，也可以指 BPM 组相对于谱面或音乐时间的偏移。
 
@@ -76,9 +76,9 @@ Offset 的单位一般为毫秒（ms），不过有时也为秒（s）。Offset 
 
 适当地在强拍或次强拍增加双押等配置，能够增加谱面表现力。
 
-!!! note "未完待续"
+!!! coffee "未完待续"
 
 [:simple-github: 通过 GitHub 订阅此文章更新](https://github.com/Chen-Luan/Chen-Luan.github.io/discussions/1){ .md-button .md-button--primary }
-[:material-coffee: 点杯咖啡慢慢读](https://afdian.net/a/chenluan){ .md-button }
+[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.net/a/chenluan){ .md-button }
 
 ---
