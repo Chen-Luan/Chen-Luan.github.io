@@ -36,6 +36,9 @@ extra:
 
 nav:
 - home: index.md
+- notes: 
+  - 2023:
+    - dec: notes/dec.md
 
 plugins:
 - search
@@ -52,3 +55,5 @@ plugins:
       site_name: 晨峦的咖啡馆
       nav_translations:
         home: 主页
+        notes: 便签墙
+        dec: 十二月
