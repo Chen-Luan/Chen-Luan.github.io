@@ -1,8 +1,11 @@
 site_name: 晨峦的咖啡馆
+repo_url: https://github.com/Chen-Luan/Chen-Luan.github.io
 theme:
   name: material
   custom_dir: overrides
   language: zh
+  icon:
+    repo: fontawesome/brands/github
   features:
   - navigation.instant
   - navigation.instant.progress
