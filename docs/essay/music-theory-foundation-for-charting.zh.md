@@ -2,7 +2,7 @@
 comments: true
 ---
 
-# 制谱乐理基础入门
+# 制谱乐理基础入门 Part1
 
 ## 制谱乐理是什么
 
@@ -76,6 +76,8 @@ Offset 的单位一般为毫秒（ms），不过有时也为秒（s）。Offset 
 
 适当地在强拍或次强拍增加双押等配置，能够增加谱面表现力。
 
-## To be continued...
+!!! note "未完待续"
+
+[:simple-github: 订阅此文章更新](https://github.com/Chen-Luan/Chen-Luan.github.io/discussions/1){ .md-button .md-button--primary }
 
 ---

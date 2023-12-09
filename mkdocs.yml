@@ -39,6 +39,7 @@ extra:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
@@ -71,4 +72,4 @@ plugins:
         notes: 便笺墙
         dec: 十二月
         essay: 札记随笔
-        music-theory-foundation-for-charting: 制谱乐理基础入门
+        music-theory-foundation-for-charting: 制谱乐理基础入门 Part1
