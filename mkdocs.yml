@@ -4,8 +4,8 @@ theme:
   custom_dir: overrides
   language: zh
   features:
-  # - navigation.instant
-  # - navigation.instant.progress
+  - navigation.instant
+  - navigation.instant.progress
   - navigation.tabs
   - navigation.prune
   - navigation.indexes
