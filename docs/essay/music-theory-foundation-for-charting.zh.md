@@ -126,7 +126,7 @@ Offset 的单位一般为毫秒（ms），不过有时也为秒（s）。Offset 
 !!! coffee "未完待续"
 
 
-[:simple-github: 订阅此文章更新](https://github.com/Chen-Luan/Chen-Luan.github.io/discussions/1){ .md-button .md-button--primary }
+[:simple-github: 订阅此文章更新](https://github.com/Chen-Luan/Chen-Luan.github.io/discussions/1?sort=new){ .md-button .md-button--primary }
 [:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.net/a/chenluan){ .md-button }
 
 ---
