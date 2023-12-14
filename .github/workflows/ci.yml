@@ -26,7 +26,6 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install jieba
-      - run: pip install "mkdocs-material[imaging]"
       - run: pip install mkdocs-material
       - run: pip install mkdocs-static-i18n
       - run: mkdocs gh-deploy --force
