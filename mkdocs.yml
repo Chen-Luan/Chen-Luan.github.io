@@ -1,4 +1,7 @@
 site_name: 晨峦的咖啡馆
+site_description: 晨峦的个人主页
+site_author: 晨峦
+site_url: https://chen-luan.github.io/
 repo_url: https://github.com/Chen-Luan/Chen-Luan.github.io
 theme:
   name: material
@@ -58,6 +61,9 @@ nav:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
 
 plugins:
+- social:
+    cards_layout_options:
+      font_family: Noto Sans SC
 - search:
     separator: '[\s\u200b\-]'
 - i18n:
