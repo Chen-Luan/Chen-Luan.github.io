@@ -61,6 +61,7 @@ nav:
     - dec: notes/2023/dec.md
 - essay:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
+  - chart-creation-concepts: essay/chart-creation-concepts.md
 
 plugins:
 - search:
@@ -83,3 +84,4 @@ plugins:
         dec: 十二月
         essay: 札记随笔
         music-theory-foundation-for-charting: 制谱乐理基础入门
+        chart-creation-concepts: 谱面创作理念
