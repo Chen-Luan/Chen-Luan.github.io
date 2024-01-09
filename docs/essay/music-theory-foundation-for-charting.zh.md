@@ -139,10 +139,10 @@ R  X   X    X   X
 
 ```
 速度加倍的部分，嗯，我相信你知道怎么处理，一般来说拍子速度也加倍就行咯。
-  |X X xxxx| X X xxxx|
+  |X X xxxx|X X xxxx|
 
-L    X  X X    X  X X
-R  X   X X   X   X X
+L    X  X X   X  X X
+R  X   X X  X   X X
 ```
 
 ```
