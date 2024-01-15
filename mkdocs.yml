@@ -62,6 +62,13 @@ nav:
 - essay:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
   - chart-creation-concepts: essay/chart-creation-concepts.md
+- exhibition:
+  - chart-cys-yys: exhibition/chart-cys-yys.md
+  - chart-rd-afterschool: exhibition/chart-rd-afterschool.md
+  - chart-rd-ddydd: exhibition/chart-rd-ddydd.md
+  - chart-xzzg-demo: exhibition/chart-xzzg-demo.md
+  - chart-ma-mrdisco: exhibition/chart-ma-mrdisco.md
+  - chart-schi-qq: exhibition/chart-schi-qq.md
 
 plugins:
 - search:
@@ -85,3 +92,10 @@ plugins:
         essay: 札记随笔
         music-theory-foundation-for-charting: 制谱乐理基础入门
         chart-creation-concepts: 谱面创作理念
+        exhibition: 展览橱窗
+        chart-cys-yys: CyS 官谱 《云与诗》
+        chart-rd-afterschool: RD 自制谱《After School》
+        chart-rd-ddydd: RD 自制谱《呆呆一呆呆》(ShortVer)
+        chart-xzzg-demo: 协奏之歌 官谱演示
+        chart-ma-mrdisco: Ma 自制谱 《末日DISCO》
+        chart-schi-qq: Schi 自制谱 《鹊桥》
