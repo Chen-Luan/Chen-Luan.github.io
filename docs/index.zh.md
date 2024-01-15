@@ -25,7 +25,7 @@ hide:
 
 今后我可能会在网站上发一些自己的的生活琐事或者灵感笔记，不过文笔应该会很零碎，主要还是作为个人记录用。
 
-网站文章可以随意使用，只要不违反法律与公序良俗，或是用于政治/宗教/攻击他人等行为。除文章另有告示外，遵循 [CC-BY-4.0 :octicons-link-external-16:](https://creativecommons.org/licenses/by/4.0/) 协议。
+网站文章（不含作品）任何人与团体都可以随意使用，只要不违反法律与公序良俗，或是用于政治/宗教/攻击他人等行为。除另有告示外，遵循 [CC-BY-4.0 :octicons-link-external-16:](https://creativecommons.org/licenses/by/4.0/) 协议。
 
 如我的内容对您有帮助，或是有启发，请考虑 [买一杯咖啡 :octicons-link-external-16:](https://afdian.net/a/chenluan) 支持一下我~
 
