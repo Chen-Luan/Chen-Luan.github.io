@@ -53,7 +53,9 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-- home: index.md
+- home: 
+  - home: index.md
+  - about-copyright: home/about-copyright.md
 - notes: 
   - 2024:
     - jan: notes/2024/jan.md
@@ -62,6 +64,7 @@ nav:
 - essay:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
   - chart-creation-concepts: essay/chart-creation-concepts.md
+  - concept-of-ai: essay/concept-of-ai.md
 - exhibition:
   - chart-cys-yys: exhibition/chart-cys-yys.md
   - chart-rd-afterschool: exhibition/chart-rd-afterschool.md
@@ -86,12 +89,14 @@ plugins:
       site_name: 晨峦的咖啡馆
       nav_translations:
         home: 主页
+        about-copyright: 关于网页内容版权的说明
         notes: 便笺墙
         jan: 一月
         dec: 十二月
         essay: 札记随笔
         music-theory-foundation-for-charting: 制谱乐理基础入门
         chart-creation-concepts: 谱面创作理念
+        concept-of-ai: 关于 AI 的个人理念
         exhibition: 展览橱窗
         chart-cys-yys: CyS 官谱 《云与诗》
         chart-rd-afterschool: RD 自制谱《After School》
