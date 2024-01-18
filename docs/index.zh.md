@@ -21,7 +21,7 @@ hide:
 
 ## 关于网站
 
-网站基于 [Material for MkDocs :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material/)，部署于 GitHub Pages，没什么经验，稍微做着试试看。
+网站基于 [MkDocs :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material/)，部署于 GitHub Pages，没什么经验，稍微做着试试看。
 
 今后我可能会在网站上发一些自己的的生活琐事或者灵感笔记，不过文笔应该会很零碎，主要还是作为个人记录用。
 
