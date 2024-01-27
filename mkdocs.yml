@@ -65,6 +65,7 @@ nav:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
   - chart-creation-concepts: essay/chart-creation-concepts.md
   - concept-of-ai: essay/concept-of-ai.md
+  - let-us-talk-about-game-development: essay/let-us-talk-about-game-development.md
 - exhibition:
   - chart-cys-yys: exhibition/chart-cys-yys.md
   - chart-rd-afterschool: exhibition/chart-rd-afterschool.md
@@ -97,6 +98,7 @@ plugins:
         music-theory-foundation-for-charting: 制谱乐理基础入门
         chart-creation-concepts: 谱面创作理念
         concept-of-ai: 关于 AI 的个人理念
+        let-us-talk-about-game-development: 让我们来聊聊游戏开发吧
         exhibition: 展览橱窗
         chart-cys-yys: CyS 官谱 《云与诗》
         chart-rd-afterschool: RD 自制谱《After School》
