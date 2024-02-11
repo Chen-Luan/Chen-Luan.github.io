@@ -59,6 +59,7 @@ nav:
 - notes: 
   - 2024:
     - jan: notes/2024/jan.md
+    - feb: notes/2024/feb.md
   - 2023:
     - dec: notes/2023/dec.md
 - essay:
@@ -93,6 +94,7 @@ plugins:
         about-copyright: 关于网页内容版权的说明
         notes: 便笺墙
         jan: 一月
+        feb: 二月
         dec: 十二月
         essay: 札记随笔
         music-theory-foundation-for-charting: 制谱乐理基础入门
