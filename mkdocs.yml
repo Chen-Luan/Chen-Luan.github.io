@@ -37,6 +37,9 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
+  analytics:
+    provider: google
+    property: G-8M56KCQHEH
   generator: false
   # alternate:
   # - name: 简体中文
