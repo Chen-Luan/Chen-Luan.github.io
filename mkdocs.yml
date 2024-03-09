@@ -58,7 +58,7 @@ markdown_extensions:
 nav:
 - home: 
   - home: index.md
-#   - about-copyright: home/about-copyright.md
+   - about-copyright: home/about-copyright.md
 # - notes: 
 #   - 2024:
 #     - feb: notes/2024/feb.md
