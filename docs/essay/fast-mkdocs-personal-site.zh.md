@@ -1,3 +1,8 @@
+---
+comments: true
+---
+
+
 # 从零开始快速搭建个人网站
 
 有没有想过搭建一个个人网站——效果就像你现在看到的这个界面一样？试试这个基于 MkDocs 和 GitHub Pages 的方案吧！
@@ -160,3 +165,10 @@ jobs:
 将 `Branch` 下的选项改为 `gh-pages` 和 `/(root)`，然后 `Save` 就可以哩！
 
 如果一切正常，任何人访问 `https:[你的 GitHub 用户名].github.io`，都可以看到你的网页啦！
+
+
+!!! coffee "The End"
+
+[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.net/a/chenluan){ .md-button .md-button--primary }
+
+---
