@@ -55,7 +55,7 @@ comments: true
 
 ### 安装 Python
 
-首先从 [Python 官网下载页 :octicons-link-external-16:](https://www.python.org/downloads/) 下载 Python，一般来讲最新版的就可以了。安装时一定要记得勾选那个什么 'Add Python to PATH' 来着。
+首先从 [Python 官网下载页 :octicons-link-external-16:](https://www.python.org/downloads/) 下载 Python，一般来讲最新版的就可以了。安装时一定要记得勾选那个什么 `Add Python to PATH` 来着。
 
 ### 安装 IDE
 
@@ -164,7 +164,12 @@ jobs:
 
 将 `Branch` 下的选项改为 `gh-pages` 和 `/(root)`，然后 `Save` 就可以哩！
 
-如果一切正常，任何人访问 `https:[你的 GitHub 用户名].github.io`，都可以看到你的网页啦！
+如果一切正常，任何人访问 `https://[你的 GitHub 用户名].github.io`，都可以看到你的网页啦！
+
+
+## 进阶操作
+
+关于修改主题、国际化、添加更多页面与导航之类的进阶教程还没来得及写，不过可以在 [MkDocs 官方文档 :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material) 先看起来啦。
 
 
 !!! coffee "The End"
