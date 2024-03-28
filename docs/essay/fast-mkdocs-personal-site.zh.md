@@ -37,9 +37,9 @@
 
 首先创建一个 `.txt` 文件，将后缀名改为 `.md`，并使用你的 IDE 打开它。
 
-接下来，就可以在 IDE 中根据 [MarkDown 语法](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 编辑文件了，如果格式正确，应该会有高亮颜色指示哦？
+接下来，就可以在 IDE 中根据 [MarkDown 语法 :octicons-link-external-16:](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) 编辑文件了，如果格式正确，应该会有高亮颜色指示哦？
 
-> 如果你没有 IDE 又想实时预览 MD 文件的效果，不妨试试在 GitHub 文件编辑页预览，或借助第三方工具哦？例如 [Dillinger](https://dillinger.io/)
+> 如果你没有 IDE 又想实时预览 MD 文件的效果，不妨试试在 GitHub 文件编辑页预览，或借助第三方工具哦？例如 [Dillinger :octicons-link-external-16:](https://dillinger.io/)
 
 
 ## 我们继续，试着在本地搭建一个网站预览吧
@@ -48,13 +48,13 @@
 
 ### 安装 Python
 
-首先从 [Python 官网下载页](https://www.python.org/downloads/) 下载 Python，一般来讲最新版的就可以了。安装时一定要记得勾选那个什么 'Add Python to PATH' 来着。
+首先从 [Python 官网下载页 :octicons-link-external-16:](https://www.python.org/downloads/) 下载 Python，一般来讲最新版的就可以了。安装时一定要记得勾选那个什么 'Add Python to PATH' 来着。
 
 ### 安装 IDE
 
 如果把代码比作文章的话，那么 IDE（集成开发环境）就是 Office 全家桶哩，使用 IDE 可以快速、高效、一站式地编辑和调试代码，省心省力。
 
-虽说没有 IDE 也能写代码，不过安装后编辑效率更高，而且能避免大部分代码拼写错误，不妨试一试。我推荐使用 [VisualStudio Code](https://code.visualstudio.com/)
+虽说没有 IDE 也能写代码，不过安装后编辑效率更高，而且能避免大部分代码拼写错误，不妨试一试。我推荐使用 [VisualStudio Code :octicons-link-external-16:](https://code.visualstudio.com/)
 
 ### 下载 MkDocs pip 包
 
@@ -66,7 +66,7 @@
 
 > 命令行的复制和粘贴操作都是鼠标右键，不是 Ctrl+V 哦
 
-> 从这一步起，你可以自行查阅 [MkDocs 官方文档](https://squidfunk.github.io/mkdocs-material) 啦
+> 从这一步起，你可以自行查阅 [MkDocs 官方文档 :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material) 啦
 
 ### 在本地部署网站吧
 
