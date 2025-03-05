@@ -68,7 +68,7 @@ nav:
 - essay:
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
   - chart-creation-concepts: essay/chart-creation-concepts.md
-  - concept-of-ai: essay/concept-of-ai.md
+#  - concept-of-ai: essay/concept-of-ai.md
   - fast-mkdocs-personal-site: essay/fast-mkdocs-personal-site.md
 #   - let-us-talk-about-game-development: essay/let-us-talk-about-game-development.md
 - exhibition:
