@@ -69,9 +69,9 @@ comments: true
 
 在命令行中输入 `pip install mkdocs-material`，就会自动下载相关的依赖项目哩，省心省力。
 
-> 国内下载速度可能较慢，试试这个清华大学提供的镜像源吧 `pip install mkdocs-material -i https://pypi.tuna.tsinghua.edu.cn/simple some-package`
+> 国内下载速度可能较慢，试试这个清华大学提供的镜像源吧 `pip install mkdocs-material -i https://pypi.tuna.tsinghua.edu.cn/simple`
 
-> 命令行的复制和粘贴操作都是鼠标右键，不是 Ctrl+V 哦
+> 如果 Ctrl+V 粘贴不正常，请在命令行空白处右键。同样的，选中文本后右键也将静默复制到剪贴板。
 
 > 从这一步起，你可以自行查阅 [MkDocs 官方文档 :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material) 啦
 
@@ -116,9 +116,13 @@ Repo 是什么呢？就当做是一个在线的大型文件夹好了！
 
 ### 将文件提交到仓库
 
-有一行细细的 `uploading an existing file`，选择那个，然后将整个文件夹拖进去上传吧！然后只需要点击 `Commit changes` 来提交就好了。
+一般来说，我们通过 git 命令行或者 GitHub Desktop 等软件来管理经常发生变更的代码，不过在此例子中我们可以简单一些。
+
+网站上有一行细细的 `uploading an existing file`，选择那个，然后将整个文件夹拖进去初始化仓库吧！完成上传之后只需要点击 `Commit changes` 来提交就好了，后续我们可以在网页上对单个文件进行在线更改。
 
 ### 让 GitHub 根据你的文档编写网页
+
+这一步我们将要求 GitHub Action 自动将我们的 MarkDown 文档转换格式为正式的网页，这种转换将在每次更新文档后自动触发~
 
 回到你的仓库，点击 `Add file > Create new file` 按钮，在文件名中输入 `.github/workflows/ci.yml`，你会发现他自动把路径识别出来了，真的是太贴心了。
 
