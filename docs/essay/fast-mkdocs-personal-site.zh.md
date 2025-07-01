@@ -173,9 +173,11 @@ jobs:
 如果一切正常，任何人访问 `https://[你的 GitHub 用户名].github.io`，都可以看到你的网页啦！
 
 
-## 进阶操作
+## 拓展阅读
 
-关于修改主题、国际化、添加更多页面与导航之类的进阶教程还没来得及写，不过可以在 [MkDocs 官方文档 :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material) 先看起来啦。
+你肯定注意到了，在执行`mkdocs new .`命令后，除了`index.md`，还自动生成了一个`mkdocs.yml`的文件，这个文件是控制整个网站文档结构、导航栏、主题样式、国际化插件、评论插件等内容的重要配置。
+
+关于这些进阶教程，目前还没来得及写，不过你已经可以在 [MkDocs 官方文档 :octicons-link-external-16:](https://squidfunk.github.io/mkdocs-material) 先看起来啦。
 
 
 !!! coffee "The End"
