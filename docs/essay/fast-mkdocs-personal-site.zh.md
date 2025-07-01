@@ -55,7 +55,9 @@ comments: true
 
 ### 安装 Python
 
-首先从 [Python 官网下载页 :octicons-link-external-16:](https://www.python.org/downloads/) 下载 Python，一般来讲最新版的就可以了。安装时一定要记得勾选那个什么 `Add Python to PATH` 来着。
+首先从 [Python 官网下载页 :octicons-link-external-16:](https://www.python.org/downloads/) 下载 Python，一般来讲最新版的就可以了。安装时一定要记得勾选 `Add python.exe to PATH` 来着... 
+
+什么，你忘了勾选？那你可要自己查一下`如何把 python 添加到系统环境变量`了。
 
 ### 安装 IDE
 
@@ -116,17 +118,17 @@ Repo 是什么呢？就当做是一个在线的大型文件夹好了！
 
 ### 将文件提交到仓库
 
-一般来说，我们通过 git 命令行或者 GitHub Desktop 等软件来管理经常发生变更的代码，不过在此例子中我们可以简单一些。
+一般来说，我们通过 git 命令行或者 GitHub Desktop 等软件来管理经常发生变更的代码，不过在此例子中我们可以简单一些，暂时通过浏览器进行初始化。
 
 网站上有一行细细的 `uploading an existing file`，选择那个，然后将整个文件夹拖进去初始化仓库吧！完成上传之后只需要点击 `Commit changes` 来提交就好了，后续我们可以在网页上对单个文件进行在线更改。
 
 ### 让 GitHub 根据你的文档编写网页
 
-这一步我们将要求 GitHub Action 自动将我们的 MarkDown 文档转换格式为正式的网页，这种转换将在每次更新文档后自动触发~
+这一步我们将要求 GitHub Action 自动将我们的 MarkDown 文档转换格式为正式的网页，这种转换将在每次更新文档后自动触发，每次更新大概要一到两分钟~
 
 回到你的仓库，点击 `Add file > Create new file` 按钮，在文件名中输入 `.github/workflows/ci.yml`，你会发现他自动把路径识别出来了，真的是太贴心了。
 
-在文件正文部分输入这一大段内容：
+目前我们不需要了解具体细节，所有只要在文件正文部分输入这一大段内容就可以了：
 
 ```
 name: ci 
