@@ -77,6 +77,6 @@ comments: true
 
 !!! coffee "The End"
 
-[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.net/a/chenluan){ .md-button .md-button--primary }
+[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.com/a/chenluan){ .md-button .md-button--primary }
 
 ---
