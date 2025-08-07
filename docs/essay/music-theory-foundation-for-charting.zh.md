@@ -163,6 +163,6 @@ OK，至此你已经基本了解了必要的乐理知识，不过在实际写谱
 
 !!! coffee "The End"
 
-[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.net/a/chenluan){ .md-button .md-button--primary }
+[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.com/a/chenluan){ .md-button .md-button--primary }
 
 ---
