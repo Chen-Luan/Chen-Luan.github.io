@@ -146,6 +146,6 @@ BPM 组是线性、依据开始节拍正序排序的，这意味着任意时刻�
 
 !!! coffee "The End"
 
-[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.net/a/chenluan){ .md-button .md-button--primary }
+[:material-coffee-outline: 点杯咖啡慢慢读](https://afdian.com/a/chenluan){ .md-button .md-button--primary }
 
 ---
