@@ -66,6 +66,7 @@ nav:
 #   - 2023:
 #     - dec: notes/2023/dec.md
 - essay:
+  - variable-speed-design-scheme: essay/variable-speed-design-scheme.md
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
   - chart-creation-concepts: essay/chart-creation-concepts.md
 #  - concept-of-ai: essay/concept-of-ai.md
@@ -101,6 +102,7 @@ plugins:
         feb: 二月
         jan: 一月
         essay: 札记随笔
+        variable-speed-design-scheme: 基于模板的音游变速系统开发设计方案
         music-theory-foundation-for-charting: 制谱乐理基础入门
         chart-creation-concepts: 谱面创作理念
         concept-of-ai: 关于 AI 的个人理念
