@@ -73,6 +73,7 @@ nav:
   - fast-mkdocs-personal-site: essay/fast-mkdocs-personal-site.md
 #   - let-us-talk-about-game-development: essay/let-us-talk-about-game-development.md
 - exhibition:
+  - chart-deflate: exhibition/chart-deflate.md
   - program-cys-charteditor-preview: exhibition/program-cys-charteditor-preview.md
   - chart-cys-yys: exhibition/chart-cys-yys.md
   - chart-rd-afterschool: exhibition/chart-rd-afterschool.md
@@ -110,10 +111,11 @@ plugins:
         let-us-talk-about-game-development: 让我们来聊聊游戏开发吧
         fast-mkdocs-personal-site: 从零开始快速搭建个人网页
         exhibition: 展览橱窗
+        chart-deflate: DEFLATE 官谱《抽空恋爱》&《Runner》
         program-cys-charteditor-preview: CyS 谱面编辑器（预览）
-        chart-cys-yys: CyS 官谱 《云与诗》
+        chart-cys-yys: CyS 官谱《云与诗》
         chart-rd-afterschool: RD 自制谱《After School》
         chart-rd-ddydd: RD 自制谱《呆呆一呆呆》(ShortVer)
         chart-xzzg-demo: 协奏之歌 官谱演示
-        chart-ma-mrdisco: Ma 自制谱 《末日DISCO》
-        chart-schi-qq: Schi 自制谱 《鹊桥》
+        chart-ma-mrdisco: Ma 自制谱《末日DISCO》
+        chart-schi-qq: Schi 自制谱《鹊桥》
