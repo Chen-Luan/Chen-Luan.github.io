@@ -27,7 +27,7 @@ hide:
 
 需要使用网站文章或作品？非常荣幸，请确认一下 [版权授权](/home/about-copyright)。
 
-如我的内容对您有帮助，或是有启发，请考虑 [买一杯咖啡 :octicons-link-external-16:](https://afdian.net/a/chenluan) 支持一下我~
+如我的内容对您有帮助，或是有启发，请考虑 [买一杯咖啡 :octicons-link-external-16:](https://afdian.com/a/chenluan) 支持一下我~
 
 如需帮助，请随时 [联系 :octicons-link-external-16:](http://chenluan.mikecrm.com/GswlLiQ) 我。
 
