@@ -1,0 +1,1158 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="欢迎光临，这里是晨峦的个人站点~">
+      
+      
+        <meta name="author" content="晨峦">
+      
+      
+        <link rel="canonical" href="https://chen-luan.github.io/essay/variable-speed-design-scheme/">
+      
+      
+        <link rel="prev" href="../../home/about-copyright/">
+      
+      
+        <link rel="next" href="../music-theory-foundation-for-charting/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>基于模板的音游变速系统开发设计方案 - 晨峦的咖啡馆</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8M56KCQHEH"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8M56KCQHEH",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8M56KCQHEH",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="晨峦的咖啡馆" class="md-header__button md-logo" aria-label="晨峦的咖啡馆" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            晨峦的咖啡馆
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              基于模板的音游变速系统开发设计方案
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Chen-Luan/Chen-Luan.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  札记随笔
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../exhibition/chart-deflate/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  展览橱窗
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="晨峦的咖啡馆" class="md-nav__button md-logo" aria-label="晨峦的咖啡馆" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    晨峦的咖啡馆
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Chen-Luan/Chen-Luan.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../.." class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    札记随笔
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            札记随笔
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    基于模板的音游变速系统开发设计方案
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    基于模板的音游变速系统开发设计方案
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      前言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      谱面数据结构定义
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      BPM 组和判定时间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      变速音符速度-时间关系计算
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      变速音符位置-时间关系计算
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      将多个音符作为一个整体变速
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      进一步拓展
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../music-theory-foundation-for-charting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    制谱乐理基础入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chart-creation-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    谱面创作理念
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fast-mkdocs-personal-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从零开始快速搭建个人网页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../exhibition/chart-deflate/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    展览橱窗
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      前言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      谱面数据结构定义
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      BPM 组和判定时间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      变速音符速度-时间关系计算
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      变速音符位置-时间关系计算
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      将多个音符作为一个整体变速
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      进一步拓展
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">基于模板的音游变速系统开发设计方案</h1>
+<h2 id="_2">前言</h2>
+<p>在传统的音游开发中，设计音符变速效果时可能遇到这些常见问题：</p>
+<ul>
+<li>音符速度与 BPM 组高度耦合，无法同时存在多种变速，修改速度会影响判定时间</li>
+<li>多个音符设置变速繁琐，无法统一效果且数据结构混乱</li>
+<li>音符之间难以协调速度，无法实现音符之间相对静止的整体变速</li>
+<li>难以协调谱面演出效果和玩家流速设置</li>
+</ul>
+<p>本文提出了一种基于变速模板和变速 Offset 的方案，以一种非常优雅的设计方案来解决这些问题。</p>
+<h2 id="_3">谱面数据结构定义</h2>
+<ul>
+<li>谱面存档文件 {}<ul>
+<li>BPM 组 []（不影响速度，用于确定音符的判定时间）<ul>
+<li>Bpm 元素 {}<ul>
+<li>开始节拍: [x,x,x]</li>
+<li>bpm: xxx</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>变速组 []<ul>
+<li>变速元素 {}<ul>
+<li>变速类型: (相对|绝对)</li>
+<li>变速数据: [见下文]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>音符组 []<ul>
+<li>音符元素 {}<ul>
+<li>判定节拍: [x,x,x]</li>
+<li>变速组引用下标: xxx</li>
+<li>变速 offset: xxx</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="bpm">BPM 组和判定时间</h2>
+<p>在此方案中，BPM 组与变速视觉效果完全解耦，BPM 组是完全依据音乐的 bpm 确定的，只受到音乐影响，与其他任何内容都无关。</p>
+<p>BPM 组是线性、依据开始节拍正序排序的，这意味着任意时刻有且仅有 1 个 Bpm 元素被激活。</p>
+<p>单个 Bpm 元素的构成如下：</p>
+<ul>
+<li>Bpm 元素<ul>
+<li>开始节拍（通常是一个三元数组，例如 [2,3,4]，代表位于第 2 + (3 / 4) = 2.75 拍。首个 Bpm 元素的节拍经过计算后必须等于 0，末个 Bpm 元素在激活后会持续到谱面结束。）</li>
+<li>bpm（通常是一个整数或小数，例如 128，表示激活后直至下个 Bpm 元素激活前音乐的 bpm。）</li>
+</ul>
+</li>
+</ul>
+<p>在以下示例中，我们定义一个音乐对应的 BPM 组：</p>
+<ul>
+<li>BPM 组<ul>
+<li>Bpm 元素 1<ul>
+<li>开始节拍: [0,0,1] = 0 // “1” 避免了除 0 异常</li>
+<li>bpm: 120</li>
+</ul>
+</li>
+<li>Bpm 元素 2<ul>
+<li>开始节拍: [2,2,4] = 2.5 // 此时第 2 个元素激活，第 1 个元素自动失效</li>
+<li>bpm: 60</li>
+</ul>
+</li>
+<li>Bpm 元素 3<ul>
+<li>开始节拍: [4,0,1] = 4</li>
+<li>bpm: 80</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>下面示范如何根据 BPM 组和音符判定节拍计算判定毫秒时间：</p>
+<ul>
+<li>假设一个音符位于 [0,1,2] = 0.5 拍<ul>
+<li>可查到此音符位于第 1 个 Bpm 元素内</li>
+<li>此音符在第 1 个 Bpm 元素内已经经过了 0.5 拍</li>
+<li>按照 120 的 bpm，计算得到每拍的时间 60s / 120 = 0.5s = 500ms</li>
+<li>所以可得此音符的判定时间为 0.5 * 500ms = 250ms</li>
+</ul>
+</li>
+<li>假设一个音符位于 [3,1,2] = 3.5 拍<ul>
+<li>可查到此音符位于第 2 个 Bpm 元素内</li>
+<li>此音符在第 2 个 Bpm 元素内已经经过了 3.5 - 2.5 = 1 拍</li>
+<li>按照 60 的 bpm，计算得到每拍的时间 60s / 60 = 1s = 1000ms</li>
+<li>由于完整经过了第 1 个 Bpm 元素，计算之前的时间为 (2.5 - 0) * (60 / 120) = 1.25s = 1250ms</li>
+<li>相加所有时间得到此音符的判定时间为 1250ms + 1000ms = 2250ms</li>
+</ul>
+</li>
+<li>假设一个音符位于 [5,0,1] = 5 拍<ul>
+<li>可查到此音符位于第 3 个 Bpm 元素内</li>
+<li>此音符在第 3 个 Bpm 元素内已经经过了 5 - 4 = 1 拍</li>
+<li>按照 80 的 bpm，计算得到每拍的时间 60s / 80 = 0.75s = 750ms</li>
+<li>由于完整经过了第 1 个和第 2 个 Bpm 元素，计算之前的时间为 [(2.5 - 0) * (60 / 120)] + [(4 - 2.5) * (60 / 60)] = 1.25s + 1.5s = 2750ms</li>
+<li>相加所有时间得到此音符的判定时间为 2750ms + 750ms = 3500ms</li>
+</ul>
+</li>
+</ul>
+<h2 id="-">变速音符速度-时间关系计算</h2>
+<p>此设计方案的变速效果核心思想是从音符判定时间出发，倒推前一段时间的流速变化。</p>
+<p>这里以 CyanStars 的设计为例，通过贝塞尔曲线可以实现可视化编辑器和减小谱面文件体积占用。</p>
+<ul>
+<li>变速数据 []<ul>
+<li>三次贝塞尔曲线元素 1 []<ul>
+<li>贝塞尔控制点 1 {}<ul>
+<li>x: xxx（相对于判定时间的毫秒时间偏移）</li>
+<li>y: xxx（流速）</li>
+</ul>
+</li>
+<li>贝塞尔控制点 2 {}<ul>
+<li>...</li>
+</ul>
+</li>
+<li>贝塞尔控制点 3 {}<ul>
+<li>...</li>
+</ul>
+</li>
+<li>贝塞尔控制点 4 {}<ul>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>三次贝塞尔曲线元素 2 []<ul>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>值得注意的是，这里的变速数据和三次贝塞尔曲线元素是有一定要求的：</p>
+<ul>
+<li>在判定时刻必须有明确流速，即首个曲线元素必须存在，且其控制点 1 的 x 值必须等于 0</li>
+<li>曲线元素之间必须是“首尾相连”（连续）的，即后一个曲线元素的控制点 1 必须完全等于上一个曲线元素的控制点 4</li>
+<li>每个曲线元素必须是“不折返”（x 轴单调，且任意 x 值有且仅有一个对应的 y 值）的，这里有两种验证方案：<ul>
+<li>验证控制点 2、控制点 3 的 x 值在控制点 1、控制点 4 区间内，这是确保曲线完全不折返的<strong>充分非必要条件</strong></li>
+<li>求导计算曲线在 x 方向上是单调的，这是<strong>充分必要条件</strong>，但计算难度大</li>
+</ul>
+</li>
+<li>所有控制点 1、控制点 4 的 x 值必须是单调递增或单调递减的（取决于程序定义判定偏移为正值还是负值），且不能相同</li>
+</ul>
+<p>以上限制意味着在程序看来，流速在任意时刻都是平滑变化的，但如果谱师需要一种类似于瞬间变化的流速，可以创建一个在短时间内大幅变化的曲线来合法模拟这种效果，详见下文。</p>
+<p>在定义流速时，我们从判定偏移 0 时开始，倒推在判定前音符的流速；在游戏时，我们从最后一个曲线元素读取音符的流速，直到进入第一个曲线元素。这两个操作的方向是相反的。</p>
+<p>一些音游可能会允许玩家自定义流速，而玩家流速可能会破坏谱面演出效果，在这里我们引入了<strong>变速类型</strong>枚举（见谱面数据结构定义），谱师可以通过将变速组标记为<strong>绝对</strong>类型，谱面在加载此流速时不会对这个变速组乘算玩家流速，从而保证演出效果不受玩家流速影响。谱师亦可将变速组标记为<strong>相对</strong>类型，以在玩家流速的基础上进一步变速。</p>
+<p>有两个例外情况需要注意：</p>
+<ul>
+<li>音符的判定时间偏移在最后一个元素以外，我们默认将最后一个元素的 y 值作为音符流速，此时音符将以恒定速度进入最后一个变速元素，随后将由此变速元素接管音符流速</li>
+<li>在音符超过判定线后（例如玩家 miss），我们默认以第一个元素的 y 值作为音符流速，此时音符将继续以恒定速度运动直到被销毁</li>
+</ul>
+<h2 id="-_1">变速音符位置-时间关系计算</h2>
+<p>位置-时间关系较速度-时间关系稍复杂，这里提出两种解决方案，用于在加载谱面时预先“烘焙”位置-时间关系，并在游戏运行时查询：</p>
+<ul>
+<li>采用采样和累加的方式，从判定时间（0 偏移，0 位置）按照一定采样频率倒推速度，并累加在判定前某一时刻的位置，这种方式是<strong>大致精确</strong>的<ul>
+<li>注意：如果采取采样方式，建议校验每个曲线元素持续时间至少达到一个采样间隔，以确保短时间大幅度的速度变化能被采样</li>
+</ul>
+</li>
+<li>采用积分运算，将速度-时间曲线转为位置-时间曲线，这种方式是<strong>完全精确</strong>的，但是计算难度较大</li>
+</ul>
+<p>一旦掌握位置-时间关系，我们可以做到：</p>
+<ul>
+<li>当音符接近判定线到一定范围时，动态生成音符</li>
+<li>当音符远离判定线到一定范围时（用于谱面表演效果），将音符销毁或归还到池</li>
+<li>在游戏运行时实时更新音符位置（可以被实时更新速度替代）</li>
+</ul>
+<p>特别的，对于长条音符，我们可以将音符的头和尾视为两个互不相干且可自由变速的物体，分别为每个物体指定变速组引用，并每帧计算并更新长条长度。如果长条被按住/进入判定时间，则可以只根据长条尾到判定线的距离更新长条长度，以此实现“按住截断”的视觉效果。</p>
+<h2 id="_4">将多个音符作为一个整体变速</h2>
+<p>有时候我们可能想让多个音符作为一个整体，音符之间相对位置固定而整体变速，变速 offset 为此提供了绝佳的解决方案：</p>
+<ul>
+<li>创建一个变速组，并编写变速曲线</li>
+<li>让所有音符引用此变速组</li>
+<li>为每个音符设定不同的变速 offset，具体如下：<ul>
+<li>这一组音符的最后一个音符的 offset 为 0，代表完全应用整个变速效果</li>
+<li>向前计算每个音符与最后一个音符的时间差，并作为 offset 填入，以将此音符的变速效果与最后一个音符同步</li>
+</ul>
+</li>
+<li>在速度-时间和位置-时间加载完毕后，游戏运行查表时，不再以当前判定时间偏移查表，而是以判定时间偏移 + offset 查表</li>
+</ul>
+<p><img alt="变速 offset 示意图" src="../../assets/images/variable-speed-offset.jpg" /></p>
+<h2 id="_5">进一步拓展</h2>
+<p>基于上文的设计思路，我们可以轻松将音符从<strong>一维的变速</strong>拓展到<strong>二维的平面位置移动</strong>，毕竟只是坐标轴不同，根据判定时间倒推前一段时间音符的位置也仅仅是多了一个轴而已。甚至如果你想，还可以拓展到<strong>三维的空间位置移动</strong>、<strong>音符的三轴旋转</strong>等方面。</p>
+<p>不过如果想要拓展到<strong>摄像机位置和角度移动</strong>、<strong>轨道位置和角度移动</strong>，就要稍作一些修改了，这些事件是从谱面 0 时间点开始，持续正向计算的，此时我们需要将曲线改造成正向推算速度-时间/位置-时间关系，数据结构、编辑器可能也需要一并稍作修改。</p>
+<h2 id="_6">总结</h2>
+<p>本文提出的基于变速模板和变速 Offset 的音符变速系统设计方案，其核心在于<strong>将决定判定时间的 BPM 组与决定视觉流速的变速组彻底解耦</strong>，并引入了<strong>模板化</strong>的设计思路。这一设计从根本上解决了传统方案中音符速度与 BPM 高度耦合所带来的种种限制，亦提高了谱师在编写音符变速效果时的直观性和简易性。</p>
+<div class="admonition coffee">
+<p class="admonition-title">The End</p>
+</div>
+<p><a class="md-button md-button--primary" href="https://afdian.com/a/chenluan"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 21v-2h18v2zM20 8V5h-2v3zm0-5a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V3zm-4 2H6v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2z"/></svg></span> 点杯咖啡慢慢读</a></p>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+  <h2 id="__comments">评论</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+        data-repo="Chen-Luan/Chen-Luan.github.io"
+        data-repo-id="R_kgDOJ2F3zg"
+        data-category="Comment"
+        data-category-id="DIC_kwDOJ2F3zs4CbnC9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
