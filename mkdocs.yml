@@ -80,6 +80,9 @@ nav:
 - translation :
   - unity-input-system-1.19.0-docs:
     - translation/unity-input-system-1.19.0-docs/index.md
+    - introduction:
+      - translation/unity-input-system-1.19.0-docs/introduction/index.md
+      - installation: translation/unity-input-system-1.19.0-docs/introduction/installation.md
 
 plugins:
 - search:
@@ -114,3 +117,5 @@ plugins:
         chart-schi-qq: Schiphalast 自制谱《鹊桥》
         translation: 文海拾贝
         unity-input-system-1.19.0-docs: Unity 输入系统 1.19.0 中文汉化文档
+        introduction: 简介
+        installation: 安装        
