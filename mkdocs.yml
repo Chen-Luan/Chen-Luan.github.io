@@ -12,12 +12,12 @@ theme:
   features:
   - navigation.tabs
   - navigation.prune
+  - navigation.indexes
   - navigation.instant
   - navigation.instant.prefetch
   - navigation.instant.progress
   - navigation.instant.preview
   - toc.follow
-  - toc.integrate
   - navigation.top
   - search.suggest
   - content.code.copy
