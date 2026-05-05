@@ -10,17 +10,18 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
-  - navigation.tabs
-  - navigation.prune
+  - content.code.copy
+  - content.footnote.tooltips
   - navigation.indexes
   - navigation.instant
   - navigation.instant.prefetch
-  - navigation.instant.progress
   - navigation.instant.preview
-  - toc.follow
+  - navigation.instant.progress
+  - navigation.prune
+  - navigation.tabs
   - navigation.top
   - search.suggest
-  - content.code.copy
+  - toc.follow
   palette: 
   - media: "(prefers-color-scheme: light)"
     scheme: default
@@ -53,6 +54,7 @@ extra:
 markdown_extensions:
   - admonition
   - attr_list
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:

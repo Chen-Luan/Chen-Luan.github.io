@@ -1,24 +1,26 @@
 !!! warning "译注：本文中的图片尚未汉化。"
 
+!!! warning "译注：本文仍在施工。"
+
 !!! note "译注：如无特殊说明，下文中的高亮块均为原注。"
 
-# Installation guide
+# 安装指南
 
-This page describes how to install and activate the Input System package for your Unity Project.
+本页介绍了如何为您的 Unity 项目安装并启用输入系统扩展包（Input System package）。
 
-!!! note
+!!! note "提示"
 
-    This version of the new Input System requires the .NET 4 runtime. It doesn't work in projects using the old .NET 3.5 runtime.
+    此版本的输入系统需要 .NET 4 运行时。它无法在运行旧版 .NET 3.5 运行时的项目中使用。
     
-    This package is only compatible with Unity Editor release versions 2021.3 and later. If you are working in a release version of the Editor prior to 2021.3, you need to use the package version that works with that version of the Editor, indicated by the **Release** tag in the [Unity Package Manager :octicons-link-external-16:](https://docs.unity3d.com/Manual/upm-ui.html) window.
+    此扩展包仅兼容 2021.3 及更高版本的 Unity 编辑器 。如果您使用的编辑器版本低于 2021.3，则需要改用与编辑器版本兼容的扩展包版本，具体请参考 [Unity 包管理器 (Unity Package Manager) :octicons-link-external-16:](https://docs.unity3d.com/Manual/upm-ui.html) 窗口中带有 **Release** 标签的版本。
 
-## Install the package
+## 安装扩展包
 
-To install the new Input System:
+若要安装新的输入系统：
 
-1. In the main menu of the Unity Editor, go to Window > Package Manager to open the Unity Package Manager.
+1. 在 Unity 编辑器的主菜单中，前往 **窗口（Windows）** > **包管理器（Package Manager）** 以打开 Unity 包管理器。[^1]
 
-2. Select Unity Registry from the navigation panel.
+2. 从导航面板中选择 **Unity Registry**。
 
 3. Select the Input System package from the list.
 
@@ -38,7 +40,7 @@ When you install the Input System package, Unity will ask whether you want to en
 
 You can find the corresponding setting in **Edit** > **Project Settings** > **Player** > **Other Settings** > **Active Input Handling**. If you change this setting you must restart the Editor for it to take effect.
 
-!!! note
+!!! note "提示"
 
     You can enable both the old and the new system at the same time. To do so, set **Active Input Handling** to **Both**.
 
@@ -53,3 +55,5 @@ The Input System package comes with a number of samples. You can install these d
 ![InstallSamples.png](../../../assets/images/docs/translation/unity-input-system-1.19.0-docs/introduction/installation/InstallSamples.png)
 
 For a more comprehensive demo project for the Input System, see the [InputSystem_Warriors :octicons-link-external-16:](https://github.com/UnityTechnologies/InputSystem_Warriors) GitHub repository.
+
+[^1]: 译注：在某些版本的 Unity 编辑器中，这个菜单可能位于 **窗口（Windows）** > **Package Management** > **包管理器（Package Manager）**。
