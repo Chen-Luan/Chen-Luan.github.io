@@ -77,6 +77,9 @@ nav:
   - chart-xzzg-demo: exhibition/chart-xzzg-demo.md
   - chart-ma-mrdisco: exhibition/chart-ma-mrdisco.md
   - chart-schi-qq: exhibition/chart-schi-qq.md
+- translation :
+  - unity-input-system-1.19.0-docs:
+    - translation/unity-input-system-1.19.0-docs/index.md
 
 plugins:
 - search:
@@ -110,3 +113,5 @@ plugins:
         chart-xzzg-demo: 协奏之歌 官谱演示
         chart-ma-mrdisco: Malody 自制谱《末日DISCO》
         chart-schi-qq: Schiphalast 自制谱《鹊桥》
+        translation: 文海拾贝
+        unity-input-system-1.19.0-docs: Unity 输入系统 1.19.0 中文汉化文档
