@@ -76,7 +76,8 @@ nav:
 
 plugins:
 - search:
-    separator: '[\s\u200b\-]'
+    lang: zh
+    jieba_dict: dict.txt.small
 - i18n:
     docs_structure: suffix
     fallback_to_default: true
