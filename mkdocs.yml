@@ -59,19 +59,11 @@ nav:
 - home: 
   - home: index.md
   - about-copyright: home/about-copyright.md
-# - notes: 
-#   - 2024:
-#     - feb: notes/2024/feb.md
-#     - jan: notes/2024/jan.md
-#   - 2023:
-#     - dec: notes/2023/dec.md
 - essay:
   - variable-speed-design-scheme: essay/variable-speed-design-scheme.md
   - music-theory-foundation-for-charting: essay/music-theory-foundation-for-charting.md
   - chart-creation-concepts: essay/chart-creation-concepts.md
-#  - concept-of-ai: essay/concept-of-ai.md
   - fast-mkdocs-personal-site: essay/fast-mkdocs-personal-site.md
-#   - let-us-talk-about-game-development: essay/let-us-talk-about-game-development.md
 - exhibition:
   - chart-deflate: exhibition/chart-deflate.md
   - program-cys-charteditor-preview: exhibition/program-cys-charteditor-preview.md
@@ -99,23 +91,17 @@ plugins:
       nav_translations:
         home: 主页
         about-copyright: 关于网页内容版权的说明
-        notes: 便笺墙
-        dec: 十二月
-        feb: 二月
-        jan: 一月
         essay: 札记随笔
         variable-speed-design-scheme: 基于模板的音游变速系统开发设计方案
         music-theory-foundation-for-charting: 制谱乐理基础入门
         chart-creation-concepts: 谱面创作理念
-        concept-of-ai: 关于 AI 的个人理念
-        let-us-talk-about-game-development: 让我们来聊聊游戏开发吧
         fast-mkdocs-personal-site: 从零开始快速搭建个人网页
-        exhibition: 展览橱窗
+        exhibition: 匠心独运
         chart-deflate: DEFLATE 官谱《抽空恋爱》&《Runner》
-        program-cys-charteditor-preview: CyS 谱面编辑器（预览）
-        chart-cys-yys: CyS 官谱《云与诗》
-        chart-rd-afterschool: RD 自制谱《After School》
-        chart-rd-ddydd: RD 自制谱《呆呆一呆呆》(ShortVer)
+        program-cys-charteditor-preview: CyanStars 谱面编辑器（预览）
+        chart-cys-yys: CyanStars 官谱《云与诗》
+        chart-rd-afterschool: RhythmDoctor 自制谱《After School》
+        chart-rd-ddydd: RhythmDoctor 自制谱《呆呆一呆呆》(ShortVer)
         chart-xzzg-demo: 协奏之歌 官谱演示
-        chart-ma-mrdisco: Ma 自制谱《末日DISCO》
-        chart-schi-qq: Schi 自制谱《鹊桥》
+        chart-ma-mrdisco: Malody 自制谱《末日DISCO》
+        chart-schi-qq: Schiphalast 自制谱《鹊桥》
