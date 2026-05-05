@@ -84,7 +84,6 @@ nav:
 plugins:
 - search:
     lang: zh
-    jieba_dict: dict.txt.small
 - i18n:
     docs_structure: suffix
     fallback_to_default: true
