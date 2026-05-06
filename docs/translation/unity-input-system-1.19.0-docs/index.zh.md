@@ -5,6 +5,8 @@ comments: true
 
 # Unity 输入系统 1.19.0 中文汉化文档
 
+本文讲解了 Unity 的新版输入系统（Input System），文档基于 com.unity.inputsystem@1.19。
+
 ???+ warning "相关文章仍在施工中"
 
     目前，你可能会遇到这些问题：
@@ -21,5 +23,3 @@ comments: true
     你可以在 [此处 :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/) 查看英文原文。
 
     欢迎在本页下的评论区指正和讨论。
-
-本文讲解了 Unity 的新版输入系统（Input System），文档基于 com.unity.inputsystem@1.19。
