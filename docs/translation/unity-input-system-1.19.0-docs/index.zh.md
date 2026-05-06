@@ -19,7 +19,7 @@ description: 本文是 Unity 输入系统 1.19.0 官方手册的中文汉化版�
 
 ???+ note "你正在浏览中文翻译版"
 
-    本文采用机器和 AI 预翻译，并由**晨峦**校对和修正，引用译文时请为我署名。
+    本文采用机器和 AI 预翻译，并由**晨峦**进行人工校对和修正，引用译文时请为我署名。
     
     你可以在 [此处 :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/) 查看英文原文。
 
