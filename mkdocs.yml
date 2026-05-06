@@ -85,6 +85,7 @@ nav:
     - introduction:
       - translation/unity-input-system-1.19.0-docs/introduction/index.md
       - installation: translation/unity-input-system-1.19.0-docs/introduction/installation.md
+      - quick-start-guide: translation/unity-input-system-1.19.0-docs/introduction/quick-start-guide.md
 
 plugins:
 - search:
@@ -120,4 +121,5 @@ plugins:
         translation: 文海拾贝
         unity-input-system-1.19.0-docs: Unity 输入系统 1.19.0 中文汉化文档
         introduction: 简介
-        installation: 安装        
+        installation: 安装     
+        quick-start-guide: 快速入门指南   
