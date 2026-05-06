@@ -18,8 +18,10 @@ comments: true
 
 ???+ note "你正在浏览中文翻译版"
 
-    本文采用机器和 AI 翻译，并由晨峦校对和修正，引用译文时请署名。
+    本文采用机器和 AI 预翻译，并由**晨峦**校对和修正，引用译文时请为我署名。
     
     你可以在 [此处 :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/) 查看英文原文。
 
     欢迎在本页下的评论区指正和讨论。
+
+    文章有帮助吗？欢迎为 [本仓库 :octicons-link-external-16:](https://github.com/Chen-Luan/Chen-Luan.github.io) Star。
