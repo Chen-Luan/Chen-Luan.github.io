@@ -38,7 +38,7 @@
 
 当您安装输入系统扩展包时，Unity 会询问是否要启用新的后端。点击 **Yes** 以启用新后端并禁用旧后端。在此过程中，编辑器将会重启。
 
-![EditorRestartWarning.png](../../../assets/images/docs/translation/unity-input-system-1.19.0-docs/introduction/installation/EditorRestartWarning.png)
+![EditorRestartWarning.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/installation/EditorRestartWarning.png)
 
 您可以在 **编辑（Edit）** > **项目设置（Project Settings）** > **玩家（Player）** > **其他设置（Other Settings）** > **活动输入处理（Active Input Handling）** 中找到对应的设置。如果您更改了此设置，必须重启编辑器才能生效。
 
@@ -46,7 +46,7 @@
 
     您可以同时启用旧系统和新系统。为此，请将 **活动输入处理（Active Input Handling）** 设置为 **两个（Both）**。
 
-![ActiveInputHandling.png](../../../assets/images/docs/translation/unity-input-system-1.19.0-docs/introduction/installation/ActiveInputHandling.png)
+![ActiveInputHandling.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/installation/ActiveInputHandling.png)
 
 当启用新的输入后端时，`ENABLE_INPUT_SYSTEM=1` 这一 C# `#define` 宏会被添加到构建（builds）中。类似地，当启用旧的输入后端时，`ENABLE_LEGACY_INPUT_MANAGER=1` 这一 C# `#define` 宏会被添加。由于两者可以同时启用，因此这两个宏定义可能**同时**为 1。
 
@@ -55,7 +55,7 @@
 
 输入系统扩展包附带了许多示例。您可以直接从 Unity 的包管理器窗口 (**窗口（Window） > 包管理器（Package Manager）**) 安装这些示例。[^1]要查看示例列表，请在包管理器窗口中选择输入系统扩展包，然后点击 **Samples** 选项卡。接着，点击任何示例名称旁边的 **Import** 即可将其导入到当前项目。
 
-![InstallSamples.png](../../../assets/images/docs/translation/unity-input-system-1.19.0-docs/introduction/installation/InstallSamples.png)
+![InstallSamples.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/installation/InstallSamples.png)
 
 有关输入系统更全面的演示项目，请参阅 GitHub 上的 [战士（InputSystem_Warriors）:octicons-link-external-16:](https://github.com/UnityTechnologies/InputSystem_Warriors) 仓库。
 
