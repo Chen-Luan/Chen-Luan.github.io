@@ -1,5 +1,3 @@
-!!! warning "本文仍在施工。"
-
 !!! warning ""
 
     译注：本文中的图片尚未汉化。
@@ -24,40 +22,41 @@
 
 1. 在 Unity 编辑器的主菜单中，前往 **窗口（Windows）** > **包管理器（Package Manager）** 以打开 Unity 包管理器。[^1]
 
-2. 从导航面板中选择 **Unity Registry**。
+2. 从导航面板中选择 **Unity 注册表（Unity Registry）**。
 
-3. Select the Input System package from the list.
+3. 从列表中选择 **Input System** 扩展包。
 
-    The Package Manager automatically selects that version to install by default.
+    包管理器默认会自动选择该版本进行安装。
 
-4. Select Install, follow any prompts to enable the backends for the new Input System.
+4. 点击 **安装（Install）**，并根据提示启用新输入系统的后端（backends）。
 
-This package also provides several samples that demonstrate how to work with the new Input System, which are also available on the [Unity Package Manager :octicons-link-external-16:](https://docs.unity3d.com/Manual/upm-ui.html) window. Refer to [Install samples](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/Installation.html#install-samples).
+此扩展包还提供了几个关于如何使用新输入系统的示例，这些示例同样可以在 [Unity 包管理器 :octicons-link-external-16:](https://docs.unity3d.com/Manual/upm-ui.html) 窗口中找到。请参阅 [安装示例](#安装示例)。
 
-## Enable the new input backends
+## 启用新的输入后端
 
-By default, Unity's classic Input Manager (`UnityEngine.Input`) is active, and support for the new Input System is inactive. This allows existing Unity Projects to keep working as they are.
+默认情况下，Unity 旧版的输入管理器（`UnityEngine.Input`）处于激活状态，而对新输入系统的支持处于未激活状态。这使得现有的 Unity 项目可以保持原样继续运行。
 
-When you install the Input System package, Unity will ask whether you want to enable the new backends. Click Yes to enable the new backends and disable the old backends. The Editor restarts during this process.
+当您安装输入系统扩展包时，Unity 会询问是否要启用新的后端。点击 **Yes** 以启用新后端并禁用旧后端。在此过程中，编辑器将会重启。
 
 ![EditorRestartWarning.png](../../../assets/images/docs/translation/unity-input-system-1.19.0-docs/introduction/installation/EditorRestartWarning.png)
 
-You can find the corresponding setting in **Edit** > **Project Settings** > **Player** > **Other Settings** > **Active Input Handling**. If you change this setting you must restart the Editor for it to take effect.
+您可以在 **编辑（Edit）** > **项目设置（Project Settings）** > **玩家（Player）** > **其他设置（Other Settings）** > **活动输入处理（Active Input Handling）** 中找到对应的设置。如果您更改了此设置，必须重启编辑器才能生效。
 
 !!! note "提示"
 
-    You can enable both the old and the new system at the same time. To do so, set **Active Input Handling** to **Both**.
+    您可以同时启用旧系统和新系统。为此，请将 **活动输入处理（Active Input Handling）** 设置为 **两个（Both）**。
 
 ![ActiveInputHandling.png](../../../assets/images/docs/translation/unity-input-system-1.19.0-docs/introduction/installation/ActiveInputHandling.png)
 
-When the new input backends are enabled, the `ENABLE_INPUT_SYSTEM=1` C# `#define` is added to builds. Similarly, when the old input backends are enabled, the `ENABLE_LEGACY_INPUT_MANAGER=`1 C# `#define` is added. Because both can be enabled at the same time, it is possible for **both** defines to be 1 at the same time.
+当启用新的输入后端时，`ENABLE_INPUT_SYSTEM=1` 这一 C# `#define` 宏会被添加到构建（builds）中。类似地，当启用旧的输入后端时，`ENABLE_LEGACY_INPUT_MANAGER=1` 这一 C# `#define` 宏会被添加。由于两者可以同时启用，因此这两个宏定义可能**同时**为 1。
 
-## Install samples
+<a id="安装示例"></a>
+## 安装示例
 
-The Input System package comes with a number of samples. You can install these directly from the Package Manager window in Unity (**Window > Package Manager**). To see the list of samples, select the Input System package in the Package Manager window and click the **Samples** tab. Then click **Import** next to any sample name to import it into the current Project.
+输入系统扩展包附带了许多示例。您可以直接从 Unity 的包管理器窗口 (**窗口（Window） > 包管理器（Package Manager）**) 安装这些示例。[^1]要查看示例列表，请在包管理器窗口中选择输入系统扩展包，然后点击 **Samples** 选项卡。接着，点击任何示例名称旁边的 **Import** 即可将其导入到当前项目。
 
 ![InstallSamples.png](../../../assets/images/docs/translation/unity-input-system-1.19.0-docs/introduction/installation/InstallSamples.png)
 
-For a more comprehensive demo project for the Input System, see the [InputSystem_Warriors :octicons-link-external-16:](https://github.com/UnityTechnologies/InputSystem_Warriors) GitHub repository.
+有关输入系统更全面的演示项目，请参阅 GitHub 上的 [战士（InputSystem_Warriors）:octicons-link-external-16:](https://github.com/UnityTechnologies/InputSystem_Warriors) 仓库。
 
 [^1]: 译注：在某些版本的 Unity 编辑器中，这个菜单可能位于 **窗口（Windows）** > **Package Management** > **包管理器（Package Manager）**。
