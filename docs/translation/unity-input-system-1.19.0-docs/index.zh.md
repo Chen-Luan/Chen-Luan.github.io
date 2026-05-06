@@ -1,5 +1,6 @@
 ---
 comments: true
+description: 本文是 Unity 输入系统 1.19.0 官方手册的中文汉化版。本文涵盖了 Input System 的核心概念、安装步骤及进阶用法，由晨峦精心校对，适用于 Unity 开发者参考学习。
 ---
 
 
