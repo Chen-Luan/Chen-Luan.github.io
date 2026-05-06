@@ -3,7 +3,7 @@ comments: true
 ---
 
 
-# Unity 输入系统 1.19.0 中文汉化文档
+# Unity 输入系统 1.19.0 手册文档 中文汉化版
 
 本文讲解了 Unity 的新版输入系统（Input System），文档基于 com.unity.inputsystem@1.19。
 

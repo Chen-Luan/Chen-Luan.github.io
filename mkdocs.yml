@@ -87,6 +87,7 @@ nav:
       - installation: translation/unity-input-system-1.19.0-docs/introduction/installation.md
       - quick-start-guide: translation/unity-input-system-1.19.0-docs/introduction/quick-start-guide.md
       - videos: translation/unity-input-system-1.19.0-docs/introduction/videos.md
+      - concepts: translation/unity-input-system-1.19.0-docs/introduction/concepts.md
 
 plugins:
 - search:
@@ -120,8 +121,9 @@ plugins:
         chart-ma-mrdisco: Malody 自制谱《末日DISCO》
         chart-schi-qq: Schiphalast 自制谱《鹊桥》
         translation: 文海拾贝
-        unity-input-system-1.19.0-docs: Unity 输入系统 1.19.0 中文汉化文档
+        unity-input-system-1.19.0-docs: Unity 输入系统 1.19.0 手册文档 中文汉化版
         introduction: 简介
         installation: 安装     
         quick-start-guide: 快速入门指南   
         videos: 视频
+        concepts: 概念
