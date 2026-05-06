@@ -86,6 +86,7 @@ nav:
       - translation/unity-input-system-1.19.0-docs/introduction/index.md
       - installation: translation/unity-input-system-1.19.0-docs/introduction/installation.md
       - quick-start-guide: translation/unity-input-system-1.19.0-docs/introduction/quick-start-guide.md
+      - videos: translation/unity-input-system-1.19.0-docs/introduction/videos.md
 
 plugins:
 - search:
@@ -123,3 +124,4 @@ plugins:
         introduction: 简介
         installation: 安装     
         quick-start-guide: 快速入门指南   
+        videos: 视频
