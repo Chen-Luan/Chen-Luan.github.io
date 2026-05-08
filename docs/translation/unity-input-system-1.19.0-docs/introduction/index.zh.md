@@ -1,7 +1,3 @@
-!!! info ""
-
-    译注：本文中的图片未进行汉化。
-
 # 输入系统（Input System）
 
 输入系统能够让用户使用设备、触摸屏或手势来控制你的游戏或应用程序。
@@ -17,6 +13,6 @@ Unity 通过两个独立的系统来支持输入：一个系统较旧，而另�
 
 本文所述的**输入系统包**是一个更现代、更灵活的系统，能够让你使用任何类型的输入设备来控制你的 Unity 内容。旨在替代 Unity 经典的输入管理器。它也被简称为**“输入系统”**。要使用它，你必须[使用包管理器（Package Manager）将其安装到你的项目中](./installation.zh.md)。
 
-在安装输入系统包的过程中，安装程序会提示是否自动停用较旧的内置系统。([了解更多](./installation.zh.md))
+在安装输入系统包的过程中，安装程序会提示是否自动停用较旧的内置系统。([了解更多](./installation.zh.md#启用新的输入后端))
 
-若要开始使用，请参阅[安装（Installation）](./installation.zh.md) 和[工作流（Workflows）](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/Workflows.html) 章节。相关示例项目，请查看 GitHub 上的 [战士 demo（Warriors demo）:octicons-link-external-16:](https://github.com/UnityTechnologies/InputSystem_Warriors)。
+若要开始使用，请参阅[安装（Installation）](./installation.zh.md) 和[工作流（Workflows）](./workflows/index.zh.md) 章节。相关示例项目，请查看 GitHub 上的 [战士 demo（Warriors demo）:octicons-link-external-16:](https://github.com/UnityTechnologies/InputSystem_Warriors)。

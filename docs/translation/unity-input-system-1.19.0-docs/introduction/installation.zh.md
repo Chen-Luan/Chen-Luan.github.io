@@ -1,7 +1,3 @@
-!!! info ""
-
-    译注：本文中的图片未进行汉化。
-
 # 安装指南
 
 本页介绍了如何为你的 Unity 项目安装并启用输入系统包（Input System package）。
@@ -27,6 +23,8 @@
 4. 点击 **安装（Install）**，并根据提示启用新输入系统的后端（backends）。
 
 此包还提供了几个关于如何使用新输入系统的示例，这些示例同样可以在 [Unity 包管理器 :octicons-link-external-16:](https://docs.unity3d.com/Manual/upm-ui.html) 窗口中找到。请参阅 [安装示例](#安装示例)。
+
+<a id="启用新的输入后端"></a>
 
 ## 启用新的输入后端
 

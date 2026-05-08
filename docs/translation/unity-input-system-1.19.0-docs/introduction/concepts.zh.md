@@ -1,9 +1,5 @@
 !!! warning "译注：相关链接尚未完善，访问时可能遭遇 404，你可以先 [查看原文 :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/Concepts.html)。"
 
-!!! info ""
-
-    译注：本文中的图片未进行汉化。
-
 # 基础概念
 
 本页介绍了与使用输入系统相关的基础概念。这些概念涉及当用户向你的游戏或应用发送输入时发生的一系列事件步骤。输入系统提供了实现这些步骤的功能，或者你也可以选择亲自实现其中的一部分。
