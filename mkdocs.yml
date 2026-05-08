@@ -88,6 +88,8 @@ nav:
       - quick-start-guide: translation/unity-input-system-1.19.0-docs/introduction/quick-start-guide.md
       - videos: translation/unity-input-system-1.19.0-docs/introduction/videos.md
       - concepts: translation/unity-input-system-1.19.0-docs/introduction/concepts.md
+      - workflows:
+        - translation/unity-input-system-1.19.0-docs/introduction/workflows/index.md
 
 plugins:
 - search:
@@ -127,3 +129,4 @@ plugins:
         quick-start-guide: 快速入门指南   
         videos: 视频
         concepts: 概念
+        workflows: 工作流

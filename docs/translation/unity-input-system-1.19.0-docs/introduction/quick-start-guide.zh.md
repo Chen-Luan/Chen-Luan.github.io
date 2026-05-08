@@ -4,21 +4,21 @@
 
 # 快速入门指南
 
-本页简要介绍了如何快速开始使用输入系统（Input System）。输入系统提供了[多种工作流 :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/Workflows.html)，你可以根据它们各自的优势来选择。本快速入门指南将展示适合大多数常见场景的工作流。
+本页简要介绍了如何快速开始使用输入系统（Input System）。输入系统提供了[多种工作流](./workflows/index.zh.md)，你可以根据它们各自的优势来选择。本快速入门指南将展示适合大多数常见场景的工作流。
 
 首先，安装输入系统包。有关如何安装新输入系统的信息，请参阅[安装指南](./installation.zh.md)。
 
-## 创建并分配默认的全项目级动作
+## 为当前项目创建并分配默认动作
 
-输入系统将你的输入配置存储在 **动作资产（Actions Asset）** 中。首次安装输入系统包时，你必须创建此动作资产。
+输入系统将你的输入配置存储在**动作资产（Actions Asset）**中。首次安装输入系统包时，你必须创建此动作资产。
 
-你可以通过依次点击主菜单的 **编辑（Edit）** > **项目设置（Project Settings）** > **输入系统包（Input System Package）** > **输入动作（Input Actions）**，然后点击标有 **创建并分配默认全项目动作资产（Create and assign a default project-wide Action Asset）** 的按钮来完成此操作。
+你可以通过依次点击主菜单的 **编辑（Edit）** > **项目设置（Project Settings）** > **输入系统包（Input System Package）** > **输入动作（Input Actions）**，然后点击标有**为当前项目创建并分配默认动作资产（Create and assign a default project-wide Action Asset）**的按钮来完成此操作。
 
 ![InputSettingsNoProjectWideAsset.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/quick-start-guide/InputSettingsNoProjectWideAsset.png)
 
 ## 查看并编辑默认输入设置
 
-一旦你创建并分配了一些全项目级动作（project-wide actions），就可以通过 **输入动作设置（Input Actions Settings）窗口** 来查看和编辑你的输入配置。
+在为当前项目创建并分配了一些动作之后，你就可以通过**输入动作设置（Input Actions Settings）窗口**来查看和编辑你的输入配置。
 
 ![ProjectSettingsInputActionsSimpleShot.png](../../../assets/images/translation/unity-input-system-1.19.0-docs/introduction/quick-start-guide/ProjectSettingsInputActionsSimpleShot.png)
 *此输入动作设置窗口显示了一些默认的动作*

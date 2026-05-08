@@ -40,7 +40,7 @@
 
 !!! note "提示"
 
-    你可以同时启用旧系统和新系统。为此，请将 **活动输入处理（Active Input Handling）** 设置为 **两个（Both）**。
+    你可以同时启用旧系统和新系统。要这么做，请将**活动输入处理（Active Input Handling）**设置为**两个（Both）**。
 
 ![ActiveInputHandling.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/installation/ActiveInputHandling.png)
 
