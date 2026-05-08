@@ -8,7 +8,7 @@
     
     此包仅兼容 2021.3 及更高版本的 Unity 编辑器 。如果你使用的编辑器版本低于 2021.3，则需要调整包版本以和编辑器版本兼容，具体请参考 [Unity 包管理器（Unity Package Manager）:octicons-link-external-16:](https://docs.unity3d.com/Manual/upm-ui.html) 页面中带有 **Release** 标签的版本。
 
-## 安装包
+## 安装输入系统包
 
 若要安装新的输入系统包：
 
@@ -28,7 +28,7 @@
 
 ## 启用新的输入后端
 
-默认情况下，Unity 旧版的输入管理器（`UnityEngine.Input`）处于激活状态，而对新版输入系统的支持处于未激活状态。这使得旧版的 Unity 项目可以兼容并以原样继续运行。
+默认情况下，Unity 旧版的输入管理器（`UnityEngine.Input`）处于激活状态，而新版输入系统处于未激活状态。这使得旧版的 Unity 项目可以兼容并以原样继续运行。
 
 在安装输入系统包时，Unity 会询问是否要启用新的后端。点击 **Yes** 以启用新版后端并禁用旧版后端。编辑器将会在此过程中自动重启。
 
@@ -48,7 +48,7 @@
 
 ## 安装示例
 
-输入系统包附带了许多示例。你可以直接从 Unity 的包管理器窗口（**窗口（Window） > 包管理器（Package Manager）**）安装这些示例。[^1]要查看示例列表，请在包管理器窗口中选择输入系统包，然后点击 **Samples** 选项卡。点击 **Import** 即可将对应的示例导入到当前项目中。
+输入系统包附带了许多示例。你可以直接从 Unity 的包管理器窗口（**窗口（Window） > 包管理器（Package Manager）**）安装这些示例。[^1]要查看示例列表，请在包管理器窗口中选择输入系统包，然后点击 **示例（Samples）** 选项卡。点击 **导入（Import）** 即可将对应的示例导入到当前项目中。
 
 ![InstallSamples.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/installation/InstallSamples.png)
 
