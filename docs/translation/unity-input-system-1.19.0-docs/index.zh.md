@@ -20,7 +20,7 @@ description: 本文是 Unity 输入系统 1.19.0 官方手册的中文汉化版�
 
     欢迎在本页下的评论区指正和讨论。
 
-    文章有帮助吗？欢迎为 [本仓库 :octicons-link-external-16:](https://github.com/Chen-Luan/Chen-Luan.github.io) Star。
+    文章有帮助吗？欢迎为 [本仓库 :octicons-link-external-16:](https://github.com/Chen-Luan/Chen-Luan.github.io) 点个 Star。
 
 # Unity 输入系统 1.19.0 手册文档 中文汉化版
 
