@@ -90,6 +90,7 @@ nav:
       - concepts: translation/unity-input-system-1.19.0-docs/introduction/concepts.md
       - workflows:
         - translation/unity-input-system-1.19.0-docs/introduction/workflows/index.md
+        - actions: translation/unity-input-system-1.19.0-docs/introduction/workflows/actions.md
 
 plugins:
 - search:
@@ -130,3 +131,4 @@ plugins:
         videos: 视频
         concepts: 概念
         workflows: 工作流
+        actions: 动作
