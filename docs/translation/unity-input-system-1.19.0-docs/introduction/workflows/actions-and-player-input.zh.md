@@ -1,29 +1,28 @@
 !!! warning "译注：相关链接尚未完善，访问时可能遭遇 404，你可以先 [查看原文 :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/Workflow-PlayerInput.html)。"
 
-# Workflow Overview - Actions and the PlayerInput Component
+# 工作流概述 - 动作与 PlayerInput（玩家输入）组件
 
 ![Workflow-PlayerInput.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/workflows/actions-and-player-input/Workflow-PlayerInput.png)
 
-The highest level of abstraction provided by the Input System is when you use [Actions](../../using-the-input-system/actions.zh.md) and the **Player Input component** together.
+输入系统（Input System）中最高级别的抽象是将 [动作](../../using-the-input-system/actions.zh.md) 与 **Player Input 组件**结合起来。
 
-The Player Input provides a way to make connections between your configured Actions and the C# methods in your own MonoBehaviour scripts, so that your desired C# methods are called when the user performs an input action.
+你可以通过 Player Input 组件来配置动作，并与你自己的 MonoBehaviour 脚本中的 C# 方法相连接，当在用户输入时会调用你指定的 C# 方法。
 
-It allows you to set up these connections using a UI in the inspector using an event-driven model, instead writing code to poll the values of your Actions as described in the [previous workflow example](./actions.zh.md).
+你可以在检视面板（Inspector）UI 中设置这些事件驱动的连接，而不是像 [上文中的工作流示例](./actions.zh.md) 那样，编写代码来轮询动作的值。
 
-The PlayerInput component also helps with local multi-player scenarios. You can use the PlayerInput component along with the PlayerInputManager component to handle automatic instantiation of new players when input occurs on new devices. For example, if you were making a four-player local cooperative game, PlayerInput with PlayerInputManager can handle allowing new players to join when they press start on their respective controller.
+PlayerInput 组件还有助于处理本地多人游戏场景。你可以将 PlayerInput 组件与 PlayerInputManager（玩家输入管理器）组件一起使用，以在新的输入设备上发生输入时自动实例化新玩家。例如，如果你正在制作一款四人本地合作游戏，结合使用 PlayerInput 和 PlayerInputManager 两个组件之后，新玩家只要按下控制器上的开始按钮即可自动加入游戏。
 
 ![PlayerInputWithGameplayEvents.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/workflows/actions-and-player-input/PlayerInputWithGameplayEvents.png)
 
-In the above example image, you can see the PlayerInput component set up to map the "move""jump" actions to `OnMove` and `OnJump` methods in a script, via Unity Events.
+在上面的示例图片中，你可以看到 PlayerInput 组件已设置为通过 Unity 事件将“move”和“jump”动作映射到脚本中的 `OnMove` 和 `OnJump` 方法。
 
-This is an example of the script which would provide an implementation of these methods
+下面是一个脚本示例，它提供了这些方法的实现：
 
 ```C#
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-// This script is designed to have the OnMove and
-// OnJump methods called by a PlayerInput component
+// 这个脚本旨在让 PlayerInput 组件调用 OnMove 和 OnJump 方法
 
 public class ExampleScript : MonoBehaviour
 {
@@ -31,19 +30,19 @@ public class ExampleScript : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        // read the value for the "move" action each event call
+        // 在每次事件调用时读取“move”动作的值
         moveAmount = context.ReadValue<Vector2>();
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        // your jump code goes here.
+        // 将你的跳跃代码写在这里。
     }
 
     public void Update()
     {
-        // to use the Vector2 value from the "move" action each
-        // frame, use the "moveAmount" variable here.
+        // 要在每一帧使用来自“move”动作的 Vector2 值，
+        // 请在此处使用“moveAmount”变量。
     }
 
 }
@@ -51,18 +50,18 @@ public class ExampleScript : MonoBehaviour
 
 !!! note "提示"
 
-    As a general rule, if you are using the PlayerInput workflow, you should read input through callbacks as described above, however if you need to access the input actions asset directly while using the PlayerInput component, you should access the [PlayerInput component's copy of the actions :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/api/UnityEngine.InputSystem.PlayerInput.html#UnityEngine_InputSystem_PlayerInput_actions), not `InputSystem.actions`.
+    通常情况下，如果你使用 PlayerInput 工作流（Workflows），则应该如上所述通过回调来读取输入，然而如果你在使用 PlayerInput 组件时需要直接访问输入动作资产（Action Asset），你应该访问 [PlayerInput 组件对动作的副本 :octicons-link-external-16:](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/api/UnityEngine.InputSystem.PlayerInput.html#UnityEngine_InputSystem_PlayerInput_actions)，而不是 `InputSystem.actions`。
 
-    This is because the PlayerInput component performs device filtering to automatically assign devices to multiple players, so each instance has its own copy of the actions filtered for each player. If you bypass this by reading `InputSystem.actions` directly, the automatic device assignment won't work.
+    这是因为 PlayerInput 组件会执行设备过滤以便为多名玩家自动分配设备，因此每个实例都有一份为对应玩家过滤后的动作副本。如果你通过直接读取 `InputSystem.actions` 来绕过这一步，自动设备分配将无法工作。
 
-## Pros and Cons
+## 优缺点
 
-This workflow has pros and cons when compared to using [Actions without a PlayerInput component](./actions.zh.md). Because it builds on the use of Actions, it comes with all the benefits provided by them, such as Action Maps, Bindings, and the ability to configure them in the Actions Editor. You can also implement [user rebinding at run time](../../using-the-input-system/input-bindings.zh.md#interactive-rebinding).
+与 [不使用 PlayerInput 组件而直接使用动作](./actions.zh.md) 相比，此工作流既有优点也有缺点。由于它建立在动作的使用之上，因此它具备动作提供的所有优势，例如动作表（Action Map）、绑定（Binding），以及在输入动作编辑器（Input Actions editor）中配置它们的能力。你还可以实现 [在运行时由用户重新绑定](../../using-the-input-system/input-bindings.zh.md#interactive-rebinding)。
 
-This workflow also allows you to set up callbacks in the Editor using an interface in the Inspector, which can sometimes reduce code complexity but can also make debugging more difficult, because the connections between your actions and code are not themselves defined in your code.
+此工作流还允许你通过检视面板中的界面在编辑器中设置回调，这有时可以降低代码的复杂性，但也可能使调试变得更加困难，因为动作与代码之间的连接是在代码之外定义的。
 
-It also provides ready-made handling of the [assignment of devices](../../using-the-input-system/player-input-component#device-assignments) and [screen-splitting](../../using-the-input-system/player-input-manager-component#split-screen) in local multiplayer scenarios. While these are things you can implement yourself, having a simple solution ready to go can be beneficial. However if you choose this option, the implementation is somewhat of a "black box", meaning you are less able to customise how it works.
+它还在本地多人游戏场景中提供了对 [设备分配](../../using-the-input-system/player-input-component#device-assignments) 和 [分屏](../../using-the-input-system/player-input-manager-component#split-screen) 的现成处理方案。虽然这些功能你可以自行实现，但拥有一个即用型的简单解决方案大有裨益。然而如果你选择此方案，其实现过程在某种程度上就像一个“黑盒”，这意味着你较难自定义其工作方式。
 
-As with the other workflows described in this section, there is a trade-off between flexibility, simplicity, and speed of implementation.
+与本节描述的其他工作流一样，在灵活性、简单性和实现速度之间需要进行权衡。
 
-To get started using this workflow, [see the documentation for the Player Input component](../../using-the-input-system/player-input-component).
+要开始使用此工作流，请 [参阅 Player Input 组件的文档](../../using-the-input-system/player-input-component)。
