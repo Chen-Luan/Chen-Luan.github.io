@@ -13,7 +13,7 @@
 | **工作流** | **交互方式** |
 | --- | --- |
 | [**基于动作**](./actions.zh.md)<br><br>这是大多数情况下**推荐**的工作流。在此工作流中，你需要先使用 [动作编辑器窗口](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/ActionsEditor.html) 来配置动作和绑定的集合，然后在代码中设置动作引用并读取这些引用的值。 | ![Workflow-Actions.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/workflows/Workflow-Actions.png) |
-| [**基于动作和玩家输入组件**](./action-and-player-input.zh.md)<br><br>此工作流提供了额外的功能，你可以直接将动作的**回调**连接到你自己的回调处理方法，从而无需在代码中处理动作引用。它还提供了一些对**本地多人游戏**场景（如设备分配和分屏功能）非常有用的特性。 | ![Workflow-PlayerInput.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/workflows/Workflow-PlayerInput.png) |
+| [**基于动作和玩家输入组件**](./actions-and-player-input.zh.md)<br><br>此工作流提供了额外的功能，你可以直接将动作的**回调**连接到你自己的回调处理方法，从而无需在代码中处理动作引用。它还提供了一些对**本地多人游戏**场景（如设备分配和分屏功能）非常有用的特性。 | ![Workflow-PlayerInput.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/workflows/Workflow-PlayerInput.png) |
 | [**直接读取设备状态**](./direct.zh.md)<br><br>这是一个简易的、纯脚本的工作流，完全绕过了动作和绑定功能。你的脚本会显式引用特定的设备控件（例如“左手柄摇杆”）并直接读取其数值。这适用于**快速原型设计**或只在单一、固定的平台上运行的游戏。由于它跳过了一些输入系统的核心功能，因此这种工作流的**灵活性较低**。 | ![Workflow-Direct.png](/assets/images/translation/unity-input-system-1.19.0-docs/introduction/workflows/Workflow-Direct.png) |
 
 !!! note "提示"
