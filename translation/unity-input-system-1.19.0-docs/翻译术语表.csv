@@ -1,0 +1,25 @@
+﻿原文,译文,可翻译性,注释
+You,你,首选,
+You,您,不允许,
+Unity,Unity,不要翻译,
+Unity Editor,Unity,首选,
+Input System,输入系统,首选,Unity 输入系统
+Input System package,输入系统,首选，缩写,当上下文与输入有关时，采用此翻译
+Input System package,输入系统包,可接受，完整形式,当上下文与软件包有关时，采用此翻译
+Input Manager,输入管理器,首选,
+Package Manager,包管理器,首选,
+Workflows,工作流,首选,
+Warriors demo,战士 demo,首选，专有名词,文章出现的示例项目
+Input Device,输入设备,可接受，完整形式,
+Input Device,外设,可接受，缩写,
+Input Device,设备,可接受，缩写,
+Control,控件,首选,输入设备上的按钮/传感器
+Action,动作,首选,输入系统上的抽象封装
+Action Map,动作表,首选,动作的文件夹/分组
+Action Map,动作映射表,不允许,错译
+Binding,绑定,首选，名词,控件与动作之间的绑定关系
+Action Asset,动作资产,首选,Unity 中记录动作表/动作/绑定的资产文件
+project-wide actions,为当前项目…动作…,首选,例：为当前项目创建动作文件
+project-wide actions,项目级动作,不推荐,尽量避免此翻译
+Input Actions editor,输入动作编辑器,首选，专有名词,首次出现时需要中英文对照
+XR,XR,不要翻译,
