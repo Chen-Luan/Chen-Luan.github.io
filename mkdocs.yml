@@ -91,6 +91,8 @@ nav:
       - workflows:
         - translation/unity-input-system-1.19.0-docs/introduction/workflows/index.md
         - actions: translation/unity-input-system-1.19.0-docs/introduction/workflows/actions.md
+        - actions-and-player-input: translation/unity-input-system-1.19.0-docs/introduction/workflows/actions-and-player-input.md
+        - direct： translation/unity-input-system-1.19.0-docs/introduction/workflows/direct.md
 
 plugins:
 - search:
@@ -132,3 +134,5 @@ plugins:
         concepts: 概念
         workflows: 工作流
         actions: 动作
+        actions-and-player-input: 动作和玩家输入
+        direct： 直接
