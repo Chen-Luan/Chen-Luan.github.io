@@ -59,7 +59,7 @@ public class ExampleScript : MonoBehaviour
 
 此工作流还允许你通过检视面板 UI 在编辑器中设置回调，这有时可以降低代码的复杂性，但也可能使调试变得更加困难，因为动作与代码之间的连接是在 Unity 编辑器中定义的。
 
-在本地多人游戏时，它还提供了对 [设备分配](../../using-the-input-system/player-input-component#device-assignments) 和 [分屏](../../using-the-input-system/player-input-manager-component#split-screen) 的现成处理方案。虽然你确实可以自己手动实现这些方案，但拥有一个现成的方案会更简单快捷。然而现成方案在某种程度上像一个“黑盒”，这也意味着你较难修改其工作方式。
+在本地多人游戏时，它还提供了对 [设备分配](../../using-the-input-system/player-input-component#device-assignments) 和 [分屏](../../using-the-input-system/player-input-manager-component#split-screen) 的现成处理方案。虽然你确实可以自己手动实现这些方案，但使用此现成方案会更简单快捷。然而现成方案在某种程度上像一个“黑盒”，这也意味着你较难修改其工作方式。
 
 与其他工作流一样，你需要在灵活性、简单性和实现速度之间需要进行权衡。
 
