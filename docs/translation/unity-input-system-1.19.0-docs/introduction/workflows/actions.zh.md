@@ -118,6 +118,6 @@ public class Example : MonoBehaviour
 
 这是输入系统推荐的工作流，其特点在于灵活和简单，适用于大多数项目。
 
-基于动作而不是设备组件是大有裨益的，因为你后续可以在动作编辑器中配置动作表（Action Map）功能和绑定，还可以在运行时实现 [用户重新绑定](../../using-the-input-system/input-bindings.zh.md#interactive-rebinding)。
+基于动作而不是设备组件是大有裨益的，因为你后续可以在动作编辑器中配置动作表（Action Map）功能和绑定，还可以实现在运行时 [用户重新绑定](../../using-the-input-system/input-bindings.zh.md#interactive-rebinding)。
 
 然而该工作流不支持多设备本地多人游戏的场景，因此如果你正在制作本地多人游戏，可能需要考虑使用 [动作和玩家输入工作流](./actions-and-player-input.zh.md)。
