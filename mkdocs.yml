@@ -135,4 +135,4 @@ plugins:
         workflows: 工作流
         actions: 动作
         actions-and-player-input: 动作和玩家输入
-        direct： 直接
+        direct: 直接
